@@ -36,6 +36,8 @@
     <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#000000">
 
+    <script type="text/javascript">var local_currency = 'KRW';</script>
+
 </head>
 
 <body>
@@ -87,6 +89,20 @@
                     <a class="button" href="https://bitbucket.org/ctgiant/litedoge/downloads/LiteDoge-Qt-Mac-v3.4.0.0.zip">Mac OS X 다운로드 »</a>
                     <a class="button" href="https://github.com/suchapp/litedoge" target="_blank">소스 코드에서 설치 »</a>
                     <a class="button" href="https://github.com/suchapp/fullnode-webwallet" target="_blank">모바일 월렛 (TOR 포함) »</a>
+                </p>
+
+                <p class="converter">
+                    <label>
+                        <span id="currency_local_symbol"></span>&nbsp;<input type="number" value="1" id="converter_local" />
+                    </label>
+
+                    <span class="small">&lt;&gt;</span>
+
+                    <label>
+                        <input type="number" id="converter_ldoge" />&nbsp;LDOGE
+                    </label>
+
+                    <br /><span class="small">데이터 소스 coinmarketcap</span>
                 </p>
 
             </div>

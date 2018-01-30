@@ -7,7 +7,46 @@
 	overflow: hidden;
 }
 .button {
-	margin: 10px !important;
+	margin: 4px !important;
+}
+input {
+ 	padding: .8em; 
+ 	font-size: .875em; 
+ 	line-height: 1; 
+ 	color:#E9E6DF;
+ 	border: 2px solid #ffffff; 
+ 	background: transparent; 
+ 	border-radius: 25px; 
+ 	height: 50px;
+ 	width: 120px;
+ 	box-shadow: none; 
+ 	-webkit-appearance: none; 
+ 	-webkit-tap-highlight-color: transparent; 
+ 	box-sizing: border-box;
+ 	outline: 0;
+ 	border-color: #d8d5ce; outline: 0;
+	}
+label {
+ 	display: inline; font-size: 10px; font-weight: bold; margin-bottom: .4em; letter-spacing: 1px; text-transform: uppercase;
+	}
+label input { 
+    font-weight: 400; font-size: 16px !important; 
+    }
+::-webkit-input-placeholder { opacity: .8; }
+::-moz-placeholder { opacity: .8; } /* firefox 19+ */
+:-ms-input-placeholder { opacity: .8; } /* ie */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.site-header.chinese input {
+	color:#f0d017;	
+ 	border-color: #f0d017;	
+}
+.site-header.chinese span.small {
+	color:#f0d017;	
+ 	border-color: #f0d017;	
 }
 .site-header.chinese {
 	background-color: #aa381e;
@@ -60,13 +99,21 @@ body, html {
 	width: 100%;
 	height: 100%;
 }
-header, #page, #space {
+header {
 	height: 100%;
+	height: calc(100% - 40px);
+	height: -o-calc(100% - 40px); /* opera */
+	height: -webkit-calc(100% - 40px); /* google, safari */
+	height: -moz-calc(100% - 40px); /* firefox */
+
 	width: 100% !important;
 	padding: 0 !important;
 }
-#space {
+#space, #page {
+	height: 100%;
 	position: absolute;
+	width: 100% !important;
+	padding: 0 !important;
 	top: 0;
 	left: 0;
 }
@@ -98,6 +145,13 @@ pre {
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -o-pre-wrap;
+}
+.converter {
+	font-family: 'Open Sans', sans-serif;	
+}
+.converter span.small {
+	font-size: 13px; margin: .4em 0 0; color: #DAD8D1;
+	opacity: .7;
 }
 
 /* ----- 1.1 ELEMENTS ----- */   
@@ -182,23 +236,6 @@ ul {
 ul {
  	list-style: disc;
 	}
-
-
-/*  --------------------------------------------
-
-	2. FORMS (@forms) - form elements
-	
-    -------------------------------------------- */
-::-webkit-input-placeholder { color:#E9E6DF; }
-::-moz-placeholder { color:#E9E6DF; } /* firefox 19+ */
-:-ms-input-placeholder { color:#E9E6DF; } /* ie */
-/* uniform  */
-/* file upload  */
-/* checkboxes  */
-/* contact form 7 compatibility  */
-/* validation  */
-
-
 
 /*  --------------------------------------------
 
@@ -361,7 +398,7 @@ ul {
 	     font-weight: 400; font-size: 1.2em; line-height: 1.4;
 		}
 .launch-wrap {
-    text-align: center; margin-bottom: 3em; 
+    text-align: center; margin-bottom: 1em; 
     }
 
 /* ROTATE WORDS */
